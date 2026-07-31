@@ -1,0 +1,14 @@
+# Temporary HTML and text scrapes
+*.html
+*.txt
+search_*.json
+links_*.json
+scraped_*.json
+
+# Python cache & virtualenv
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
