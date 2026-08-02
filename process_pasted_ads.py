@@ -10,6 +10,23 @@ from bs4 import BeautifulSoup
 
 CSV_PATH = "ads_research.csv"
 
+def get_existing_ad_links():
+    existing_links = set()
+    existing_ids = set()
+    try:
+        with open(CSV_PATH, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for r in reader:
+                link = r.get("Ad Link", "").strip()
+                if link:
+                    existing_links.add(link)
+                    id_match = re.search(r'id=(\d+)', link)
+                    if id_match:
+                        existing_ids.add(id_match.group(1))
+    except Exception:
+        pass
+    return existing_links, existing_ids
+
 def extract_price_from_text(text):
     matches = re.findall(r'(\b\d{1,3}(?:[.,\s]\d{3})*\s*(?:DZD|DA|د\.ج|دج)\b)', text, re.IGNORECASE)
     if matches:
@@ -123,17 +140,39 @@ async def process_single_ad_link(browser, ad_url):
     }
 
 async def process_all(urls):
+    existing_links, existing_ids = get_existing_ad_links()
+    
+    urls_to_scrape = []
+    skipped_urls = []
+
+    for u in urls:
+        clean_u = u.strip()
+        id_match = re.search(r'id=(\d+)', clean_u)
+        ad_id = id_match.group(1) if id_match else None
+
+        if clean_u in existing_links or (ad_id and ad_id in existing_ids):
+            print(f"⚠️ SKIPPED (Duplicate Ad Link already exists in sheet): {clean_u}")
+            skipped_urls.append(clean_u)
+        else:
+            urls_to_scrape.append(clean_u)
+
+    if not urls_to_scrape:
+        print("\nAll pasted ad links already exist in ads_research.csv. No new entries added.")
+        return []
+
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         results = []
-        for u in urls:
+        for u in urls_to_scrape:
             if "facebook.com/ads/library" in u:
-                rec = await process_single_ad_link(browser, u.strip())
+                rec = await process_single_ad_link(browser, u)
                 results.append(rec)
         await browser.close()
         return results
 
 def sync_csv(records):
+    if not records:
+        return
     fieldnames = ["Store Name", "Product Name", "Product Price", "Gender", "Landing Page Link", "Ad Link", "Date Published"]
     rows = []
     try:
@@ -153,11 +192,11 @@ def sync_csv(records):
         for r in rows:
             writer.writerow(r)
 
-    print(f"\nAppended {len(records)} records to {CSV_PATH}.")
+    print(f"\nAppended {len(records)} new records to {CSV_PATH}.")
     
     # Sync git commit
     try:
-        subprocess.run(f'git add "{CSV_PATH}" ; git commit -m "Auto-sync ad links with Message fallback"', shell=True)
+        subprocess.run(f'git add "{CSV_PATH}" ; git commit -m "Auto-sync new unique ad links"', shell=True)
         print("Synced to git successfully.")
     except Exception as e:
         print("Git sync note:", e)
