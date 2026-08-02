@@ -91,6 +91,7 @@ python scripts/inspect_sheet_format.py
 ---
 
 ## ⚠️ Important Rules for Agents
+- **Script Location**: Always place or save new scripts directly inside the `scripts/` directory (never leave python or helper scripts in the project root).
 - **Preserve Formatting**: When modifying CSV rows or pushing updates to Google Sheets, avoid overwriting cell formatting, dropdown data validations, or date format patterns.
 - **Currency & Gender Conventions**: Ensure prices end with `DZD` and gender values strictly adhere to `Homme`, `Femme`, or `Unisex`.
 - **Windows Encoding**: Always run Python scripts with UTF-8 stdout reconfigured (`sys.stdout.reconfigure(encoding='utf-8')`) to prevent `UnicodeEncodeError` in Windows terminals.
