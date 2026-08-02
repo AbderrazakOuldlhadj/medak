@@ -11,7 +11,6 @@ from bs4 import BeautifulSoup
 CSV_PATH = "ads_research.csv"
 
 def extract_price_from_text(text):
-    # Match prices like 12 500 DZD, 12,500 DZD, 12500 DA, 2900 DA, 3900 DA, etc.
     matches = re.findall(r'(\b\d{1,3}(?:[.,\s]\d{3})*\s*(?:DZD|DA|د\.ج|دج)\b)', text, re.IGNORECASE)
     if matches:
         return matches[0].strip()
@@ -75,21 +74,22 @@ async def process_single_ad_link(browser, ad_url):
                 product_name = line
                 break
 
-    # Outbound Landing Page Link
+    # Outbound Landing Page Link detection
     l_links = set(re.findall(r'l\.facebook\.com/l\.php\?u=([^&"\']+)', content))
     landing_url = ""
     for l in l_links:
         dec = urllib.parse.unquote(l)
-        if not any(x in dec for x in ["facebook.com", "instagram.com", "alibaba.com", "doubleclick", "cnct.fr", "itunes.apple.com", "google.com"]):
+        if not any(x in dec for x in ["facebook.com", "instagram.com", "alibaba.com", "doubleclick", "cnct.fr", "itunes.apple.com", "google.com", "m.me", "wa.me"]):
             landing_url = dec
             break
 
-    if not landing_url:
-        landing_url = ad_url
+    # If no external landing page website, set Landing Page Link to "Message"
+    if not landing_url or "m.me" in content or "wa.me" in content or "Send Message" in text or "Envoyer un message" in text:
+        landing_url = "Message"
 
-    # 2. Render Landing Page for Real Checkout Price
+    # 2. Render Landing Page for Real Checkout Price (if external landing page exists)
     real_price = "N/A"
-    if landing_url.startswith("http") and "facebook.com" not in landing_url:
+    if landing_url != "Message" and landing_url.startswith("http"):
         print(f"Rendering Landing Page for exact checkout price: {landing_url}")
         lp_page = await context.new_page()
         try:
@@ -157,7 +157,7 @@ def sync_csv(records):
     
     # Sync git commit
     try:
-        subprocess.run(f'git add "{CSV_PATH}" ; git commit -m "Auto-sync ad links"', shell=True)
+        subprocess.run(f'git add "{CSV_PATH}" ; git commit -m "Auto-sync ad links with Message fallback"', shell=True)
         print("Synced to git successfully.")
     except Exception as e:
         print("Git sync note:", e)
@@ -172,5 +172,3 @@ if __name__ == "__main__":
         recs = asyncio.run(process_all(urls_input))
         if recs:
             sync_csv(recs)
-            with open("latest_scraped_ad.json", "w", encoding="utf-8") as f:
-                json.dump(recs, f, indent=2, ensure_ascii=False)
