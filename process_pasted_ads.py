@@ -151,13 +151,13 @@ async def process_all(urls):
         ad_id = id_match.group(1) if id_match else None
 
         if clean_u in existing_links or (ad_id and ad_id in existing_ids):
-            print(f"⚠️ SKIPPED (Duplicate Ad Link already exists in sheet): {clean_u}")
+            print(f"[SKIPPED] Duplicate Ad Link already exists in sheet: {clean_u}")
             skipped_urls.append(clean_u)
         else:
             urls_to_scrape.append(clean_u)
 
     if not urls_to_scrape:
-        print("\nAll pasted ad links already exist in ads_research.csv. No new entries added.")
+        print("All pasted ad links already exist in ads_research.csv. No new entries added.")
         return []
 
     async with async_playwright() as p:
