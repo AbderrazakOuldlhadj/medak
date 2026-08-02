@@ -11,4 +11,7 @@ __pycache__/
 
 # System files
 .DS_Store
-Thumbs.db
+# Credentials & OAuth tokens
+client_secret*.json
+token*.json
+credentials.json
