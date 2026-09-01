@@ -39,19 +39,23 @@ def main():
 
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
-            print("Refreshing expired token...")
-            creds.refresh(Request())
-        else:
+            try:
+                print("Refreshing expired token...")
+                creds.refresh(Request())
+            except Exception as e:
+                print(f"Token refresh failed ({e}). Starting fresh authorization flow...")
+                creds = None
+        if not creds or not creds.valid:
             print("\nStarting Google OAuth Authorization server...")
             flow = InstalledAppFlow.from_client_secrets_file(client_secret_file, SCOPES)
             
             # Print authorization instructions
             auth_url, _ = flow.authorization_url(prompt='consent')
-            print("\n" + "="*70)
-            print("PLEASE AUTHORIZE GOOGLE CONNECTION IN YOUR BROWSER:")
-            print("The authorization page should automatically open in your default browser.")
-            print(f"If it does not open, click or visit this link:\n{auth_url}")
-            print("="*70 + "\n")
+            print("\n" + "="*70, flush=True)
+            print("PLEASE AUTHORIZE GOOGLE CONNECTION IN YOUR BROWSER:", flush=True)
+            print(f"\nAUTH LINK: {auth_url}\n", flush=True)
+            print("="*70 + "\n", flush=True)
+            sys.stdout.flush()
             
             creds = flow.run_local_server(port=0, prompt='consent')
 
