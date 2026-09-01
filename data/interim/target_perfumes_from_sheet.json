@@ -1,0 +1,387 @@
+[
+  {
+    "row": 2,
+    "brand": "ABSOLUS ALLEGORIA",
+    "name": "EPICES EXQUISES EDP 125ML",
+    "full_name": "ABSOLUS ALLEGORIA EPICES EXQUISES EDP 125ML",
+    "gros_price": "21800"
+  },
+  {
+    "row": 3,
+    "brand": "ABSOLUS ALLEGORIA",
+    "name": "OUD ESSENTIEL EDP 125ML",
+    "full_name": "ABSOLUS ALLEGORIA OUD ESSENTIEL EDP 125ML",
+    "gros_price": "21800"
+  },
+  {
+    "row": 4,
+    "brand": "ABSOLUS ALLEGORIA",
+    "name": "SANTAL ROYAL 125ML",
+    "full_name": "ABSOLUS ALLEGORIA SANTAL ROYAL 125ML",
+    "gros_price": "21000"
+  },
+  {
+    "row": 5,
+    "brand": "ANTONIO BANDERAS",
+    "name": "BLUE SEDUCTION EDT 200ML",
+    "full_name": "ANTONIO BANDERAS BLUE SEDUCTION EDT 200ML",
+    "gros_price": "5400"
+  },
+  {
+    "row": 6,
+    "brand": "AZZARO",
+    "name": "THE MOST WANTED EDP 100ML",
+    "full_name": "AZZARO THE MOST WANTED EDP 100ML",
+    "gros_price": "13,200"
+  },
+  {
+    "row": 7,
+    "brand": "AZZARO",
+    "name": "THE MOST WANTED EDT 100ML",
+    "full_name": "AZZARO THE MOST WANTED EDT 100ML",
+    "gros_price": "11,600"
+  },
+  {
+    "row": 8,
+    "brand": "AZZARO",
+    "name": "THE MOST WANTED PARFUM 100ML",
+    "full_name": "AZZARO THE MOST WANTED PARFUM 100ML",
+    "gros_price": "14,500"
+  },
+  {
+    "row": 9,
+    "brand": "AZZARO",
+    "name": "WANTED BY NIGHT EDP 100ML",
+    "full_name": "AZZARO WANTED BY NIGHT EDP 100ML",
+    "gros_price": "13,800"
+  },
+  {
+    "row": 10,
+    "brand": "AZZARO",
+    "name": "WANTED THE MOST PARFUM 100ML",
+    "full_name": "AZZARO WANTED THE MOST PARFUM 100ML",
+    "gros_price": "13200"
+  },
+  {
+    "row": 11,
+    "brand": "BOUCHERON",
+    "name": "SINGULIER EDP 100 ML",
+    "full_name": "BOUCHERON SINGULIER EDP 100 ML",
+    "gros_price": "8600"
+  },
+  {
+    "row": 12,
+    "brand": "CAROLINA HERRERA",
+    "name": "CHIC HOMME EDT 100ML",
+    "full_name": "CAROLINA HERRERA CHIC HOMME EDT 100ML",
+    "gros_price": "10,800"
+  },
+  {
+    "row": 13,
+    "brand": "CHOPARD",
+    "name": "BLACK INCENCE MALAKIE EDP 80ML",
+    "full_name": "CHOPARD BLACK INCENCE MALAKIE EDP 80ML",
+    "gros_price": "12800"
+  },
+  {
+    "row": 14,
+    "brand": "CHOPARD",
+    "name": "OUD MALAKI EDP 80ML",
+    "full_name": "CHOPARD OUD MALAKI EDP 80ML",
+    "gros_price": "12200"
+  },
+  {
+    "row": 15,
+    "brand": "CK",
+    "name": "IN2U EDT 150ML",
+    "full_name": "CK IN2U EDT 150ML",
+    "gros_price": "6,000"
+  },
+  {
+    "row": 16,
+    "brand": "CK",
+    "name": "ONE EDT 200ML",
+    "full_name": "CK ONE EDT 200ML",
+    "gros_price": "8,200"
+  },
+  {
+    "row": 17,
+    "brand": "CLINIQUE HAPPY",
+    "name": "COLOGNE FOR MEN EDT 100ML",
+    "full_name": "CLINIQUE HAPPY COLOGNE FOR MEN EDT 100ML",
+    "gros_price": "5,800"
+  },
+  {
+    "row": 18,
+    "brand": "DIOR",
+    "name": "HOMME INTENSE EDP 150ML",
+    "full_name": "DIOR HOMME INTENSE EDP 150ML",
+    "gros_price": "31,000"
+  },
+  {
+    "row": 19,
+    "brand": "DIOR",
+    "name": "HOMME PARFUM 125ML",
+    "full_name": "DIOR HOMME PARFUM 125ML",
+    "gros_price": "35,000"
+  },
+  {
+    "row": 20,
+    "brand": "DIOR",
+    "name": "HOMME SPORT EDT 200ML",
+    "full_name": "DIOR HOMME SPORT EDT 200ML",
+    "gros_price": "33000"
+  },
+  {
+    "row": 21,
+    "brand": "DIOR",
+    "name": "SAUVAGE EDT 100ML",
+    "full_name": "DIOR SAUVAGE EDT 100ML",
+    "gros_price": "20,500"
+  },
+  {
+    "row": 22,
+    "brand": "DIOR",
+    "name": "SAUVAGE ELEXIR EDP 100ML",
+    "full_name": "DIOR SAUVAGE ELEXIR EDP 100ML",
+    "gros_price": "39,500"
+  },
+  {
+    "row": 23,
+    "brand": "DIOR",
+    "name": "COLOGNE HOMME EDC 200ML",
+    "full_name": "DIOR COLOGNE HOMME EDC 200ML",
+    "gros_price": "33000"
+  },
+  {
+    "row": 24,
+    "brand": "DOLCE GABBANA",
+    "name": "KING EDP 100 ML",
+    "full_name": "DOLCE GABBANA KING EDP 100 ML",
+    "gros_price": "14000"
+  },
+  {
+    "row": 25,
+    "brand": "EMPORIO ARMANI",
+    "name": "STRONGER WITH YOU INTENSELY EDP 100ML",
+    "full_name": "EMPORIO ARMANI STRONGER WITH YOU INTENSELY EDP 100ML",
+    "gros_price": "18,600"
+  },
+  {
+    "row": 26,
+    "brand": "EMPORIO ARMANI",
+    "name": "STRONGER WITH YOU POWERFULLY EDP 100ML",
+    "full_name": "EMPORIO ARMANI STRONGER WITH YOU POWERFULLY EDP 100ML",
+    "gros_price": "20,200"
+  },
+  {
+    "row": 27,
+    "brand": "ENCENS",
+    "name": "MYTHIQUE EDP 125ML",
+    "full_name": "ENCENS MYTHIQUE EDP 125ML",
+    "gros_price": "19200"
+  },
+  {
+    "row": 28,
+    "brand": "GIVENCHY",
+    "name": "BLUE LABEL EDT 100ML",
+    "full_name": "GIVENCHY BLUE LABEL EDT 100ML",
+    "gros_price": "11500"
+  },
+  {
+    "row": 29,
+    "brand": "GUERLAIN",
+    "name": "EPICES EXQUISES EDP 125ML",
+    "full_name": "GUERLAIN EPICES EXQUISES EDP 125ML",
+    "gros_price": "19200"
+  },
+  {
+    "row": 30,
+    "brand": "GUERLAIN",
+    "name": "L'HOMME IDEAL EXTREME EDP 100ML",
+    "full_name": "GUERLAIN L'HOMME IDEAL EXTREME EDP 100ML",
+    "gros_price": "15200"
+  },
+  {
+    "row": 31,
+    "brand": "GUERLAIN",
+    "name": "L'HOMME IDEAL INTENSE EDP 100ML",
+    "full_name": "GUERLAIN L'HOMME IDEAL INTENSE EDP 100ML",
+    "gros_price": "15500"
+  },
+  {
+    "row": 32,
+    "brand": "GUERLAIN",
+    "name": "PATCHOULI ARDEN EDP 125ML",
+    "full_name": "GUERLAIN PATCHOULI ARDEN EDP 125ML",
+    "gros_price": "20500"
+  },
+  {
+    "row": 33,
+    "brand": "HABIT",
+    "name": "ROUGE EDP 100ML",
+    "full_name": "HABIT ROUGE EDP 100ML",
+    "gros_price": "15800"
+  },
+  {
+    "row": 34,
+    "brand": "HERMES",
+    "name": "H24 EDT 100ML",
+    "full_name": "HERMES H24 EDT 100ML",
+    "gros_price": "12800"
+  },
+  {
+    "row": 35,
+    "brand": "HUGO BOSS",
+    "name": "BOSS BOTTLED NIGHT EDT 100ML",
+    "full_name": "HUGO BOSS BOSS BOTTLED NIGHT EDT 100ML",
+    "gros_price": "8,800"
+  },
+  {
+    "row": 36,
+    "brand": "HUGO BOSS",
+    "name": "JUST DIFFRENT EDT 75ML",
+    "full_name": "HUGO BOSS JUST DIFFRENT EDT 75ML",
+    "gros_price": "6,400"
+  },
+  {
+    "row": 37,
+    "brand": "HUGO BOSS",
+    "name": "SUPERMAN EDP 125ML",
+    "full_name": "HUGO BOSS SUPERMAN EDP 125ML",
+    "gros_price": "9,500"
+  },
+  {
+    "row": 38,
+    "brand": "HUGO BOSS",
+    "name": "XY EDT 100ML",
+    "full_name": "HUGO BOSS XY EDT 100ML",
+    "gros_price": "7200"
+  },
+  {
+    "row": 39,
+    "brand": "JEAN PAUL GAULTIER",
+    "name": "LE MALE EDT 125ML",
+    "full_name": "JEAN PAUL GAULTIER LE MALE EDT 125ML",
+    "gros_price": "16,200"
+  },
+  {
+    "row": 40,
+    "brand": "JEAN PAUL GAULTIER",
+    "name": "SCANDALE PARFUM 150ML",
+    "full_name": "JEAN PAUL GAULTIER SCANDALE PARFUM 150ML",
+    "gros_price": "24200"
+  },
+  {
+    "row": 41,
+    "brand": "JOOP",
+    "name": "HOMME EDT 125ML",
+    "full_name": "JOOP HOMME EDT 125ML",
+    "gros_price": "6,600"
+  },
+  {
+    "row": 42,
+    "brand": "KENZO",
+    "name": "INTENSE EDT 100ML",
+    "full_name": "KENZO INTENSE EDT 100ML",
+    "gros_price": "12,500"
+  },
+  {
+    "row": 43,
+    "brand": "L'INSTANT",
+    "name": "HOMME EDP 100ML",
+    "full_name": "L'INSTANT HOMME EDP 100ML",
+    "gros_price": "15400"
+  },
+  {
+    "row": 44,
+    "brand": "LACOSTE",
+    "name": "L.12.12 NOIR 100ML",
+    "full_name": "LACOSTE L.12.12 NOIR 100ML",
+    "gros_price": "9,800"
+  },
+  {
+    "row": 45,
+    "brand": "LAURA BIAGIOTTI",
+    "name": "ROMA UOMO EDT 125ML",
+    "full_name": "LAURA BIAGIOTTI ROMA UOMO EDT 125ML",
+    "gros_price": "9,200"
+  },
+  {
+    "row": 46,
+    "brand": "MONT BLANC",
+    "name": "EXPLORER EDP 100ML",
+    "full_name": "MONT BLANC EXPLORER EDP 100ML",
+    "gros_price": "10500"
+  },
+  {
+    "row": 47,
+    "brand": "PRADA",
+    "name": "PARADIGME EDP 100ML",
+    "full_name": "PRADA PARADIGME EDP 100ML",
+    "gros_price": "22200"
+  },
+  {
+    "row": 48,
+    "brand": "SPICE BOMP",
+    "name": "DARK LEATHER EDP 90ML",
+    "full_name": "SPICE BOMP DARK LEATHER EDP 90ML",
+    "gros_price": "18,400"
+  },
+  {
+    "row": 49,
+    "brand": "SPICE BOMP",
+    "name": "EDT 90ML",
+    "full_name": "SPICE BOMP EDT 90ML",
+    "gros_price": "14,800"
+  },
+  {
+    "row": 50,
+    "brand": "SPICE BOMP",
+    "name": "INFRARED EDP 90ML",
+    "full_name": "SPICE BOMP INFRARED EDP 90ML",
+    "gros_price": "16,800"
+  },
+  {
+    "row": 51,
+    "brand": "YVES SAINT LAURENT",
+    "name": "KOUROS EDT 100ML",
+    "full_name": "YVES SAINT LAURENT KOUROS EDT 100ML",
+    "gros_price": "13800"
+  },
+  {
+    "row": 52,
+    "brand": "YVES SAINT LAURENT",
+    "name": "L'HOMME EDT 100ML",
+    "full_name": "YVES SAINT LAURENT L'HOMME EDT 100ML",
+    "gros_price": "15,800"
+  },
+  {
+    "row": 53,
+    "brand": "YVES SAINT LAURENT",
+    "name": "LA NUIT DE L'HOMME EDT 100ML",
+    "full_name": "YVES SAINT LAURENT LA NUIT DE L'HOMME EDT 100ML",
+    "gros_price": "15,800"
+  },
+  {
+    "row": 54,
+    "brand": "YVES SAINT LAURENT",
+    "name": "MY SLF EDP 100ML",
+    "full_name": "YVES SAINT LAURENT MY SLF EDP 100ML",
+    "gros_price": "20800"
+  },
+  {
+    "row": 55,
+    "brand": "YVES SAINT LAURENT",
+    "name": "Y EDT 100ML",
+    "full_name": "YVES SAINT LAURENT Y EDT 100ML",
+    "gros_price": "15,500"
+  },
+  {
+    "row": 56,
+    "brand": "YVES SAINT LAURENT",
+    "name": "Y INTENSE EDP 100ML",
+    "full_name": "YVES SAINT LAURENT Y INTENSE EDP 100ML",
+    "gros_price": "22500"
+  }
+]
