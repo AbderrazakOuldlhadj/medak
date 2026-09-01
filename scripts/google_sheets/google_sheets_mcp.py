@@ -27,8 +27,10 @@ SCOPES = [
     'https://www.googleapis.com/auth/userinfo.email'
 ]
 
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+
 def get_drive_service():
-    token_file = os.path.join(os.path.dirname(__file__), '..', 'token.json')
+    token_file = os.path.join(ROOT_DIR, 'token.json')
     if not os.path.exists(token_file):
         token_file = 'token.json'
     if not os.path.exists(token_file):
@@ -37,7 +39,7 @@ def get_drive_service():
     return build('drive', 'v3', credentials=creds)
 
 def get_sheets_service():
-    token_file = os.path.join(os.path.dirname(__file__), '..', 'token.json')
+    token_file = os.path.join(ROOT_DIR, 'token.json')
     if not os.path.exists(token_file):
         token_file = 'token.json'
     if not os.path.exists(token_file):

@@ -17,27 +17,29 @@ The primary outputs are:
 
 ```
 c:/Users/msipc/Desktop/products/parfums/
-├── ads_research.csv                 # Primary CSV database for competitor ads research
-├── client_secret_*.json             # Google OAuth2 client credentials
-├── token.json                       # Google OAuth2 authorized user tokens (Drive & Sheets API)
-├── AGENTS.md                        # Workspace documentation & AI context (this file)
-└── scripts/                         # Python automation & API integration scripts
-    ├── sync_ads_csv_to_sheets.py    # Syncs ads_research.csv to Google Sheets while preserving formatting
-    ├── create_ads_research_sheet.py # Creates and formats the initial Google Sheet
-    ├── google_sheets_mcp.py         # Google Sheets service helper module (handles authentication & API clients)
-    ├── list_google_sheets.py        # Lists all Google Sheets in the user's Drive
-    ├── authorize_google.py          # Refreshes OAuth2 credentials flow if needed
-    ├── build_verified_csv.py        # Validates and builds clean competitor CSV datasets
-    ├── parse_all_searches.py        # Parses raw HTML search dumps from Meta Ads Library
-    ├── search_meta_ads.py           # Meta Ads Library research helpers
-    └── ...
+├── AGENTS.md                            # Workspace documentation & AI context (this file)
+├── README.md                            # High-level project summary
+├── client_secret_*.json                 # Google OAuth2 client credentials
+├── token.json                           # Google OAuth2 authorized user tokens
+├── assets/                              # Product images & media assets
+│   └── product_images/                  # Fragrance product photos (.jpg, .png)
+├── data/                                # Cleaned datasets and raw scraper dumps
+│   ├── processed/                       # Production datasets (ads_research.csv, shopify_perfumes_export.csv)
+│   ├── samples/                         # Test/sample datasets
+│   ├── raw_dumps/                       # Scraped HTML & text dumps (data/raw_dumps/html, data/raw_dumps/text)
+│   └── interim/                         # Intermediate extracted JSON datasets
+└── scripts/                             # Python automation scripts
+    ├── scraping/                        # Meta Ads Library scrapers & HTML parsers
+    ├── processing/                      # Data clean up, validation & CSV builders
+    ├── google_sheets/                   # Google Sheets API integrations & formatting
+    └── utils/                           # Inspection, diffing & debugging utilities
 ```
 
 ---
 
 ## 📊 Core Data Schemas
 
-### `ads_research.csv`
+### `data/processed/ads_research.csv`
 The primary dataset schema consists of 7 columns:
 1. `Store Name`: Name of the e-commerce store (e.g., *Pafen Dz*, *Smell Good Dz*, *Fragrance Dz*, *Auraluxe Dz*).
 2. `Product Name`: Specific fragrance title, volume, and concentration (e.g., *Armaf Club De Nuit Intense Man 105ml EDP*).
@@ -78,14 +80,14 @@ When updating the Google Sheet, **never wipe out the existing user-configured sh
 ### 1. Syncing `ads_research.csv` to Google Sheets
 Run the sync script directly via python:
 ```bash
-python scripts/sync_ads_csv_to_sheets.py
+python scripts/google_sheets/sync_ads_csv_to_sheets.py
 ```
 *Note*: This script uses `google_sheets_mcp.py` to auto-refresh expired OAuth credentials, clears previous cell values in `Sheet1!A1:Z50`, updates new rows, and updates the basic filter range.
 
 ### 2. Inspecting Sheet Formats
 If checking spreadsheet structure or user changes:
 ```bash
-python scripts/inspect_sheet_format.py
+python scripts/utils/inspect_sheet_format.py
 ```
 
 ---

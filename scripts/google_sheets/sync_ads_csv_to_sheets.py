@@ -6,7 +6,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.path.append(os.path.dirname(__file__))
 import google_sheets_mcp as mcp_mod
 
-CSV_PATH = os.path.join(os.path.dirname(__file__), '..', 'ads_research.csv')
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+CSV_PATH = os.path.join(ROOT_DIR, 'data', 'processed', 'ads_research.csv')
 SPREADSHEET_ID = "1bNNR9wgq0rw4cNeP8SEU-WlXCxx1pe-5_1aWq_YXO_A"
 
 def sync_csv_to_sheet():
