@@ -1,0 +1,32 @@
+2026/09/02-07:02:59.027 484 Creating DB C:\Users\msipc\Desktop\products\parfums\data\interim\sephora_profile_1788328977\Default\Session Storage since it was missing.
+2026/09/02-07:02:59.791 484 Reusing MANIFEST C:\Users\msipc\Desktop\products\parfums\data\interim\sephora_profile_1788328977\Default\Session Storage/MANIFEST-000001
+2026/09/02-07:07:02.931 6bc4 Level-0 table #5: started
+2026/09/02-07:07:02.946 6bc4 Level-0 table #5: 19753 bytes OK
+2026/09/02-07:07:02.953 6bc4 Delete type=0 #3
+2026/09/02-07:07:48.593 6bc4 Level-0 table #7: started
+2026/09/02-07:07:48.610 6bc4 Level-0 table #7: 25418 bytes OK
+2026/09/02-07:07:48.617 6bc4 Delete type=0 #4
+2026/09/02-07:08:17.493 484 Level-0 table #9: started
+2026/09/02-07:08:17.503 484 Level-0 table #9: 20571 bytes OK
+2026/09/02-07:08:17.507 484 Delete type=0 #6
+2026/09/02-07:08:47.581 6bc4 Level-0 table #11: started
+2026/09/02-07:08:47.616 6bc4 Level-0 table #11: 20702 bytes OK
+2026/09/02-07:08:47.628 6bc4 Delete type=0 #8
+2026/09/02-07:09:18.250 6bc4 Level-0 table #13: started
+2026/09/02-07:09:18.277 6bc4 Level-0 table #13: 21025 bytes OK
+2026/09/02-07:09:18.309 6bc4 Delete type=0 #10
+2026/09/02-07:10:02.816 484 Level-0 table #15: started
+2026/09/02-07:10:02.827 484 Level-0 table #15: 23498 bytes OK
+2026/09/02-07:10:02.830 484 Delete type=0 #12
+2026/09/02-07:10:02.831 484 Compacting 4@0 + 1@1 files
+2026/09/02-07:10:02.846 484 Generated table #16@0: 430 keys, 109818 bytes
+2026/09/02-07:10:02.846 484 Compacted 4@0 + 1@1 files => 109818 bytes
+2026/09/02-07:10:02.850 484 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/09/02-07:10:02.852 484 Delete type=2 #7
+2026/09/02-07:10:02.852 484 Delete type=2 #9
+2026/09/02-07:10:02.852 484 Delete type=2 #11
+2026/09/02-07:10:02.852 484 Delete type=2 #13
+2026/09/02-07:10:02.852 484 Delete type=2 #15
+2026/09/02-07:10:32.037 484 Level-0 table #18: started
+2026/09/02-07:10:32.050 484 Level-0 table #18: 24439 bytes OK
+2026/09/02-07:10:32.052 484 Delete type=0 #14

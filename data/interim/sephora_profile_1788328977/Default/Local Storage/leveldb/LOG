@@ -1,0 +1,14 @@
+2026/09/02-07:02:59.025 6bc4 Creating DB C:\Users\msipc\Desktop\products\parfums\data\interim\sephora_profile_1788328977\Default\Local Storage\leveldb since it was missing.
+2026/09/02-07:02:59.783 6bc4 Reusing MANIFEST C:\Users\msipc\Desktop\products\parfums\data\interim\sephora_profile_1788328977\Default\Local Storage\leveldb/MANIFEST-000001
+2026/09/02-07:08:26.904 484 Level-0 table #5: started
+2026/09/02-07:08:26.915 484 Level-0 table #5: 24400 bytes OK
+2026/09/02-07:08:26.919 484 Delete type=0 #3
+2026/09/02-07:09:18.442 484 Level-0 table #7: started
+2026/09/02-07:09:18.494 484 Level-0 table #7: 29210 bytes OK
+2026/09/02-07:09:18.498 484 Delete type=0 #4
+2026/09/02-07:10:12.634 484 Level-0 table #9: started
+2026/09/02-07:10:12.655 484 Level-0 table #9: 16166 bytes OK
+2026/09/02-07:10:12.663 484 Delete type=0 #6
+2026/09/02-07:10:41.638 484 Level-0 table #11: started
+2026/09/02-07:10:41.648 484 Level-0 table #11: 23320 bytes OK
+2026/09/02-07:10:41.651 484 Delete type=0 #8

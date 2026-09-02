@@ -1,0 +1,5 @@
+2026/09/02-06:39:59.880 5df8 Creating DB C:\Users\msipc\Desktop\products\parfums\data\interim\sephora_profile_1788327599\Default\Session Storage since it was missing.
+2026/09/02-06:39:59.968 5df8 Reusing MANIFEST C:\Users\msipc\Desktop\products\parfums\data\interim\sephora_profile_1788327599\Default\Session Storage/MANIFEST-000001
+2026/09/02-06:49:19.258 5df8 Level-0 table #5: started
+2026/09/02-06:49:19.275 5df8 Level-0 table #5: 14362 bytes OK
+2026/09/02-06:49:19.278 5df8 Delete type=0 #3
