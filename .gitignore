@@ -15,3 +15,7 @@ __pycache__/
 client_secret*.json
 token*.json
 credentials.json
+
+# Temporary browser profiles
+data/interim/sephora_*
+
